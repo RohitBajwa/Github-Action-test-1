@@ -17,5 +17,14 @@ jobs:
       run: |
         pwd
         ls -al
+        cd ~
+        ls -al
+        cd .m2
+        ls -al
+        cat settings.xml
+        cd repository
+        ls -al
+        cd com/tibco/plugins
+        ls -l        
     - name: Build with Maven
       run: mvn -B package --file tibco.bwce.sample.binding.rest.BookStore.application.parent/pom.xml
