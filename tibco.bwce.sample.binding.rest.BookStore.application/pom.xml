@@ -13,7 +13,7 @@
   <properties>
     <skipTests>false</skipTests>
     <bw.Home>\bwce\2.6</bw.Home>
-    <docker.env.property.file>.\tibco.bwce.sample.binding.rest.BookStore.application\docker-host-env-dev.properties</docker.env.property.file>
+    <docker.env.property.file>.\docker-host-env-dev.properties</docker.env.property.file>
     <project.type>Docker</project.type>
     <k8s.property.file>k8s-dev.properties</k8s.property.file>
     <failIfNoTests>false</failIfNoTests>
