@@ -18,8 +18,9 @@ jobs:
         cd ~
         wget -q -t=3 https://github.com/TIBCOSoftware/bw6-plugin-maven/releases/download/v2.8.1/TIB_BW_Maven_Plugin_2.8.1.zip
         unzip TIB_BW_Maven_Plugin_2.8.1.zip -d TIB_BW_Maven_Plugin_2.8.1
-        unzip ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin.zip -d ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin  
-        bash ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin/install.sh    
+        unzip ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin.zip -d ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin 
+        cd ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin        
+        bash install.sh    
         echo "confirming the installation"
         cd ~
         pwd
