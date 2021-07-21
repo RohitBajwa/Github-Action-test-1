@@ -25,6 +25,8 @@ jobs:
         mkdir ~/bw6_maven_plugin
         cd bw6_maven_plugin
         pwd
-        wget -v -t=3 https://github.com/TIBCOSoftware/bw6-plugin-maven/releases/download/v2.8.1/TIB_BW_Maven_Plugin_2.8.1.zip         
+        wget -t=3 https://github.com/TIBCOSoftware/bw6-plugin-maven/releases/download/v2.8.1/TIB_BW_Maven_Plugin_2.8.1.zip
+        echo "Unzipping the file"
+        unzip TIB_BW_Maven_Plugin_2.8.1.zip        
         echo "inside the downloaded folder"
         ls -al
