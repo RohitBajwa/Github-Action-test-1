@@ -25,5 +25,6 @@ jobs:
         mkdir ~/bw6_maven_plugin
         cd bw6_maven_plugin
         pwd
-        curl -sL https://api.github.com/repos/TIBCOSoftware/bw6-plugin-maven/releases/latest | jq -r '.assets[].browser_download_url'         echo "inside the downloaded folder"
+        curl -sL https://api.github.com/repos/TIBCOSoftware/bw6-plugin-maven/releases/latest | jq -r '.assets[].browser_download_url'         
+        echo "inside the downloaded folder"
         ls -al
