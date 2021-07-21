@@ -33,6 +33,7 @@ jobs:
         echo " echo Java version"
         java -version
         cd config
+        mkdir bw6-maven-plugin
         unzip bw6-maven-plugin.zip bw6-maven-plugin
         cd bw6-maven-plugin
         echo "Inside bw6-maven-plugin"
