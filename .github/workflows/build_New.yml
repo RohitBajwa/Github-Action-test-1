@@ -22,6 +22,7 @@ jobs:
         cd ~
         pwd
         ls -al
+        mkdir /opt/tibco
         mkdir ~/bw6_maven_plugin
         cd bw6_maven_plugin
         pwd
@@ -30,5 +31,7 @@ jobs:
         unzip TIB_BW_Maven_Plugin_2.8.1.zip        
         echo "inside the downloaded folder"
         ls -al
+        echo " echo Java version"
+        java -version
         echo "Installing the Maven plugin"
-        ./install.sh /opt/tibco
+        bash -x ./install.sh /opt/tibco
