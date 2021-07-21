@@ -41,4 +41,25 @@ jobs:
         echo "Inside bw6-maven-plugin"
         ls -al
         bash -x ./install.sh
+        echo "Home Directory"
+        cd ~
+        pwd
+        ls -al
+        echo "inside .m2"
+        cd .m2
+        ls -al
+        echo "Content of Settings.xml"
+        cat settings.xml
+        echo "inside repository"
+        cd repository
+        ls -al
+        echo "inside tibco plugins folder"
+        cd com/tibco/plugins
+        ls -l 
+        echo "inside com.tibco.bw.palette.shared"
+        cd com.tibco.bw.palette.shared
+        ls -al
+        echo "inside 6.1.100"
+        cd 6.1.100
+        ls -al
 
