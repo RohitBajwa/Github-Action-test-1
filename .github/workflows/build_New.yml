@@ -34,6 +34,8 @@ jobs:
         java -version
         cd config
         mkdir bw6-maven-plugin
+        echo "Inside config"
+        ls -al
         unzip bw6-maven-plugin.zip bw6-maven-plugin
         cd bw6-maven-plugin
         echo "Inside bw6-maven-plugin"
