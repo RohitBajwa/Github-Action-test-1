@@ -22,7 +22,6 @@ jobs:
         cd ~
         pwd
         ls -al
-        mkdir /opt/tibco
         mkdir ~/bw6_maven_plugin
         cd bw6_maven_plugin
         pwd
@@ -33,5 +32,10 @@ jobs:
         ls -al
         echo " echo Java version"
         java -version
-        echo "Installing the Maven plugin"
-        bash -x ./install.sh /opt/tibco
+        cd config
+        unzip bw6-maven-plugin.zip bw6-maven-plugin
+        cd bw6-maven-plugin
+        echo "Inside bw6-maven-plugin"
+        ls -al
+        bash -x ./install.sh
+
