@@ -65,42 +65,6 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbDriver</name>
-			<value>org.postgresql.Driver</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbURL</name>
-			<value>jdbc:postgresql://10.97.106.28:5432/postgres</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbPassword</name>
-			<value>#!GGJ+JL88lZfUCyq9BUmk92uzoH5HOM2XBF+Rv+JtedM=</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Password</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbUserName</name>
-			<value>postgres</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.CLOUD.PORT</name>
 			<value>8080</value>
 			<deploymentSettable>false</deploymentSettable>

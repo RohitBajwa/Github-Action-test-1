@@ -78,10 +78,6 @@
   <sca:property xmi:id="_9wAkkEeyEeSkBPbNLcPWbg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_9wDn4EeyEeSkBPbNLcPWbg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_9wKVkEeyEeSkBPbNLcPWbg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
-  <sca:property xmi:id="_PFAPkEe1EeSkBPbNLcPWbg" name="dbDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_PG330Ee1EeSkBPbNLcPWbg" name="dbPassword" type="property:password" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_PIiEsEe1EeSkBPbNLcPWbg" name="dbURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_PKZs8Ee1EeSkBPbNLcPWbg" name="dbUserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_cYKcsGbkEeWUZJX06Fex6w" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
   <sca:component xmi:id="_TRR2MEfKEeSkBPbNLcPWbg" name="ComponentBooks" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TRR2MUfKEeSkBPbNLcPWbg" processName="tibco.bwce.sample.binding.rest.bookstore.Books"/>
@@ -103,8 +99,5 @@
     <sca:service xmi:id="_eP16cE05EeSgU7p4E9ti_Q" name="Event">
       <sca:interface.wsdl xmi:id="_eP16cU05EeSgU7p4E9ti_Q" interface="http://www.example.org/Events/REST/1412583816215#wsdl.interface(Event)"/>
     </sca:service>
-  </sca:component>
-  <sca:component xmi:id="_fY76gGbuEeWUZJX06Fex6w" name="ComponentActivator" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_fY76gWbuEeWUZJX06Fex6w" processName="tibco.bwce.sample.binding.rest.bookstore.Activator"/>
   </sca:component>
 </sca:composite>

@@ -8,6 +8,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.APPNODE.NAME</name>
@@ -16,6 +17,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.HOST.NAME</name>
@@ -24,6 +26,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.MODULE.VERSION</name>
@@ -32,6 +35,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.DEPLOYMENTUNIT.NAME</name>
@@ -40,6 +44,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.DEPLOYMENTUNIT.VERSION</name>
@@ -48,6 +53,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.MODULE.NAME</name>
@@ -56,38 +62,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbDriver</name>
-			<value>org.postgresql.Driver</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbURL</name>
-			<value>jdbc:postgresql://3.6.236.114:5432/postgres</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbPassword</name>
-			<value>#!QGg8qpD/DiuORP0rkq9eaEI+vZRPauvjmJFV2BmAPSU=</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Password</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.sample.binding.rest.BookStore//dbUserName</name>
-			<value>postgres</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.sample.binding.rest.BookStore//BW.CLOUD.PORT</name>
@@ -96,6 +71,7 @@
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 	</globalVariables>
 </repository>
