@@ -37,6 +37,6 @@ jobs:
         namespace: ${{ env.OPENSHIFT_NAMESPACE }}
     - name: Deploy App to OpenShift
       run: |
-        oc new-app docker.io/rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev --as-deployment-config
+        oc new-app rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev:latest --as-deployment-config
         oc status
         
