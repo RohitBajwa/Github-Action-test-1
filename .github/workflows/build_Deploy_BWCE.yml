@@ -21,11 +21,6 @@ jobs:
         unzip ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin.zip -d ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin 
         cd ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin        
         bash install.sh 
-    - name: configure bw6-maven-plugin
-      run: |
-        docker version
-        printenv        
-        
     - name: Build with Maven
-      run: mvn -B clean package initialize docker:build -Ddocker.property.file=docker-dev.properties -Dk8s.property.file=k8s-dev.properties docker:push --file tibco.bwce.sample.binding.rest.BookStore.application.parent/pom.xml
+      run: mvn -B clean package initialize docker:build -Ddocker.property.file=docker-dev.properties -Dk8s.property.file=k8s-dev.properties docker:push -Ddocker.username=${{ secrets.DOCKER_USER }} -Ddocker.password=${{ secrets.DOCKER_PASSWORD }} --file tibco.bwce.sample.binding.rest.BookStore.application.parent/pom.xml
 
