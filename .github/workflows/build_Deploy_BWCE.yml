@@ -38,7 +38,6 @@ jobs:
     - name: Deploy App to OpenShift
       run: |
         docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
-        oc new-app rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev:latest --as-deployment-config
-        
+        oc new-app docker.io/rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev:latest --as-deployment-config --insecure-registry=true         
         oc status
         
