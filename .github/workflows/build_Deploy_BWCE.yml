@@ -38,8 +38,8 @@ jobs:
     - name: Deploy App to OpenShift
       run: |
         docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
-        oc import-image teststream --from=rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev:latest --confirm
-        oc new-app teststream:latest
-        oc expose service/teststream
+        oc import-image bookstore --from=rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev:latest --confirm
+        oc new-app bookstore:latest --name testapp
+        oc expose service/bookstore
         oc status
         
