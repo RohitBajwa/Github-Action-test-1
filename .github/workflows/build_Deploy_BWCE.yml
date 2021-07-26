@@ -40,5 +40,6 @@ jobs:
         docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
         oc import-image teststream --from=rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev:latest --confirm
         oc new-app teststream:latest
+        oc expose service/teststream
         oc status
         
