@@ -23,4 +23,20 @@ jobs:
         bash install.sh 
     - name: Build with Maven
       run: mvn -B clean package initialize docker:build -Ddocker.property.file=docker-dev.properties -Dk8s.property.file=k8s-dev.properties docker:push -Ddocker.username=${{ secrets.DOCKER_USER }} -Ddocker.password=${{ secrets.DOCKER_PASSWORD }} --file tibco.bwce.sample.binding.rest.BookStore.application.parent/pom.xml
+    - name: OC Login and set context
+      uses: redhat-actions/oc-login@v1
+      env:
+        OPENSHIFT_USER: ${{ secrets.USER }}
+        OPENSHIFT_NAMESPACE: ${{ secrets.MY_NAMESPACE }}
 
+      with:
+        openshift_server_url: ${{ secrets.OPENSHIFT_SERVER }}
+        openshift_token: ${{ secrets.OPENSHIFT_TOKEN }}
+        openshift_username: ${{ env.OPENSHIFT_USER }}
+        insecure_skip_tls_verify: true
+        namespace: ${{ env.OPENSHIFT_NAMESPACE }}
+    - name: Deploy App to OpenShift
+      run: |
+        oc new-app docker.io/rohitbajwa/tibco.bwce.sample.binding.rest.bookstore.application_1.0.0_dev --as-deployment-config -Ddocker.username=${{ secrets.DOCKER_USER }} -Ddocker.password=${{ secrets.DOCKER_PASSWORD }}
+        oc status
+        
