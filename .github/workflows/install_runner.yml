@@ -1,0 +1,23 @@
+name: OpenShift Self-Hosted Installer Workflow
+on: [ workflow_dispatch ]
+
+jobs:
+  install-runner:
+    runs-on: ubuntu-20.04  
+    name: Install runner
+    steps:
+    - name: OC Login and set context
+      uses: redhat-actions/oc-login@v1
+      env:
+        OPENSHIFT_USER: ${{ secrets.USER }}
+        OPENSHIFT_NAMESPACE: ${{ secrets.MY_NAMESPACE }}
+      with:
+        openshift_server_url: ${{ secrets.OPENSHIFT_SERVER }}
+        openshift_token: ${{ secrets.OPENSHIFT_TOKEN }}
+        openshift_username: ${{ env.OPENSHIFT_USER }}
+        insecure_skip_tls_verify: true
+        namespace: ${{ env.OPENSHIFT_NAMESPACE }}
+    - name: Install self hosted runner into this repository
+      uses: redhat-actions/openshift-actions-runner-installer@v1
+      with:
+        github_pat: ${{ secrets.PAT }}
