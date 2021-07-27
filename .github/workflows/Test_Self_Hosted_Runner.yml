@@ -16,7 +16,7 @@ jobs:
     - name: configure bw6-maven-plugin
       run: |
         cd ~
-        yum install wget
+        sudo yum install wget
         wget -q -t=3 https://github.com/TIBCOSoftware/bw6-plugin-maven/releases/download/v2.8.1/TIB_BW_Maven_Plugin_2.8.1.zip
         unzip TIB_BW_Maven_Plugin_2.8.1.zip -d TIB_BW_Maven_Plugin_2.8.1
         unzip ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin.zip -d ./TIB_BW_Maven_Plugin_2.8.1/config/bw6-maven-plugin 
