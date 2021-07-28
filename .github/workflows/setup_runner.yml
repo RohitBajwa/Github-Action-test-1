@@ -27,3 +27,4 @@ jobs:
        git clone https://github.com/RohKumarT/Maven_Plugin.git
        cd Maven_Plugin
        chmod 755 ./install.sh
+       ./install.sh
